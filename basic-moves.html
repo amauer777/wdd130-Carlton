@@ -1,53 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Moves Page</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/basic.css">
+    <link type="text/css" rel="stylesheet" href="styles/basic.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Smooch+Sans:wght@100..900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Smooch+Sans:wght@100..900&display=swap");
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-         <!--logo and nav-->
-         <a id="logo_link" href="index.html">
-            <img class="logo" src="images/fighterlucaslogo.png" alt="logo">
-         </a>
-         <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Basic Move Guide</a>
-            <a href="#">Advanced Move Guide</a>
-         </nav>
-        </header>
-
-
-        <!--text-->
-        <p>Super Smash Bros' Lucas reigns from Nintendo's Earthbound series. Childlike in appearance he packs a punch in Smash Ultimate, becoming a viable fighter with his strong move set. His move set may appear similar to another character Ness, however he features strengths Lucas lacks. Here you can find a guide on Lucas' Basic move set, and his more Advanced combos to dominate in Super Smash Bros Ultimate.</p>
-        <!--box links-->
-        <nav></nav>
-            <a id="basic-link" href="basic-moves.html">Basic Move Guide</a>
-            <a id="advanced-link" href="#">Advanced Move Guide</a>
-         </nav>
-    
+      <header>
+        <nav>
+          <a id="logo_link" href="index.html">
+            <img class="logo" src="images/fighterlucaslogo.png" alt="logo" />
+          </a>
+          <a href="index.html">Home</a>
+          <a href="basic-moves.html">Basic Moves</a>
+          <a href="#">Advanced Moves</a>
+        </nav>
+      </header>
     </div>
 
     <main>
-        <p>These are Lucas' most basic combos. Prioritizing simplicity and the most basic moves set a foundation for Lucas players. 
-        These aren't flashy nor complex, simply here to inform and provide a base knowledge for players interested in learning Lucas.</p>
-        <img src="images/lucas_images/3hitcombo(1).jpg" alt="3 hit combo" class="combo-image">
-        <img src="images/lucas_images/3hitcombo(2).jpg" alt="3 hit combo" class="combo-image">
-        <p>triple tap combo: - A + A + A - A</p>
-        <img src="images/lucas_images/3hitcombo(3).jpg" alt="3 hit combo" class="combo-image">
-        <p>3 tap combo - x damage</p>
-        <img src="images/lucas_images/sprintattack.jpg" alt="sprint attack" class="combo-image">
-        <p>sprint attack: - -> + -> + A - Quick sprinting attack dealing - x damage</p>
-        <img src="images/lucas_images/uptilt.jpg" alt="up tilt" class="combo-image">
-        <p>up-tilt: - ^ + A - A kick above Lucas' head with a small hit box - x damage</p>
-        
+      <div class="wrapper">
+        <h2 class="colored">
+          These are Lucas' most basic combos. Prioritizing simplicity and the
+          most basic moves set a foundation for Lucas players. These aren't
+          flashy nor complex, simply here to inform and provide a base knowledge
+          for players interested in learning Lucas.
+        </h2>
+
+        <div class="combo-container">
+          <img
+            src="images/lucas_images/3hitcombo(1).jpg"
+            alt="3 hit combo"
+            class="combo-image"
+          />
+          <ul>
+            <li>Triple tap combo: A + A + A - A</li>
+          </ul>
+        </div>
+
+        <div class="combo-container">
+          <img
+            src="images/lucas_images/3hitcombo(2).jpg"
+            alt="3 hit combo"
+            class="combo-image"
+          />
+          <ul>
+            <li>3 tap combo - x damage</li>
+          </ul>
+        </div>
+
+        <div class="combo-container">
+          <img
+            src="images/lucas_images/sprintattack.jpg"
+            alt="sprint attack"
+            class="combo-image"
+          />
+          <ul>
+            <li>Quick sprinting attack dealing - x damage</li>
+          </ul>
+        </div>
+
+        <div class="combo-container">
+          <img
+            src="images/lucas_images/uptilt.jpg"
+            alt="up tilt"
+            class="combo-image"
+          />
+          <ul>
+            <li>
+              Up-tilt: ^ + A - A kick above Lucas' head with a small hit box - x
+              damage
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

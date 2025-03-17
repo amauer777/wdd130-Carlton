@@ -1,18 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Smooch+Sans:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Smooch+Sans:wght@100..900&display=swap");
 
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    margin: 0;
+    padding-top: 120px; /* Prevents content from being hidden under fixed navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures everything stays centered */
+    background-color: beige;
+}
+
+/* ----- Navbar Styling ----- */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: #D4AC0D;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0 0px;
+}
+
+#logo_link {
+    display: flex;
+    align-items: center;
+}
 
 .logo {
-    height: 80px;
     width: 80px;
-    margin: 0 auto;
+    height: auto;
+    float: left;
+}
+
+nav a {
+    color: #396E94;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    background-color: #396E94;
+    color: white;
+}
+
+/* ----- Main Content Styling ----- */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+h2 {
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    margin: 50px auto;
+    padding: 15px 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+h2.colored {
+    background-color: #396E94;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- Paragraph & Bullet Styling ----- */
+li {
+    font-size: 1.2em;
+    color: #396E94;
+    margin: 0;
+}
+
+/* ----- Combo Image & Text Alignment Fix ----- */
+.combo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image & text */
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .combo-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 300px;
     width: 300px;
-    float: left;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul p {
+    display: list-item;
+    list-style-position: inside;
 }
