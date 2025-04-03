@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Smooch+Sans:wght@100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+/* Global body styling */
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    margin: 0;
+    padding-top: 120px; /* Prevents content from being hidden under fixed navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures everything stays centered */
+    background-color: beige;
+}
+
+/* ----- Navbar Styling ----- */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: #D4AC0D;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+}
+
+#logo_link {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    float: left;
+}
+
+nav a {
+    color: #396E94;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #396E94;
+    color: white;
+}
+
+/* ----- Main Content Styling ----- */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Heading and Text Styling */
+h2 {
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    margin: 50px auto;
+    padding: 15px 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+h2.colored {
+    background-color: #396E94;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph & Bullet Styling */
+p {
+    font-size: 1.1em;
+    color: #396E94;
+    line-height: 1.6;
+}
+
+li {
+    font-size: 1.2em;
+    color: #396E94;
+    margin: 10px 0;
+}
+
+/* Combo Image & Text Alignment Fix */
+.combo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image & text */
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.combo-image {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Box links in Home Page */
+.container > nav:not(header nav) {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    background-color: #FEFAE0;
+}
+
+.container > nav:not(header nav) a {
+    flex: 0 1 calc(50% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: rgb(62, 85, 150);
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container > nav:not(header nav) a:hover {
+    background-color: rgb(50, 70, 130);
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+#hero img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgb(240, 225, 65);
+    color: rgb(62, 85, 150);
+    font-family: "Open Sans";
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    width: 25%;
+}
+
+/* Mobile and Tablet Responsiveness */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    nav a {
+        padding: 15px;
+        font-size: 1.1em;
+    }
+
+    .container > nav:not(header nav) {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .container > nav:not(header nav) a {
+        height: auto;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .combo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .combo-image {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 1.1em;
+        width: 100%;
+    }
+}
